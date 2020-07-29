@@ -1,3 +1,19 @@
+# Responsive-Web-Pages
+
+This is a responsive web app created using MongoDB, Express, ReactJS, NodeJS (MERN STACK). The images depicting how the project looks like 
+have been embedded here:-
+
+=======
+### Images:-
+<img src="screenshots/Screenshot 1.png"/>
+<img src="screenshots/Screenshot 2.png"/>
+<img src="screenshots/Screenshot 3.png"/>
+<img src="screenshots/Screenshot 4.png"/>
+<img src="screenshots/Screenshot 5.png"/>
+<img src="screenshots/Screenshot 6.png"/>
+<img src="screenshots/Screenshot 7.png"/>
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
