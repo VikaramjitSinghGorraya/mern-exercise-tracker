@@ -24,7 +24,7 @@ export default class ExercisesList extends Component {
   }
 
   componentDidMount() {
-    axios.get('https://process.env.ATLAS_URI/exercises/')
+    axios.get('/exercises/')
       .then(response => {
         this.setState({ exercises: response.data })
       })
@@ -34,7 +34,7 @@ export default class ExercisesList extends Component {
   }
 
   deleteExercise(id) {
-    axios.delete('http://process.env.ATLAS_URI/exercises/'+id)
+    axios.delete('/exercises/'+id)
       .then(response => { console.log(response.data)});
 
     this.setState({
