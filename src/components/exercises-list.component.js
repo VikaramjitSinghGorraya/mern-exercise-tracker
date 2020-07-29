@@ -24,7 +24,7 @@ export default class ExercisesList extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://process.env.ATLAS_URI/exercises/')
+    axios.get('https://process.env.ATLAS_URI/exercises/')
       .then(response => {
         this.setState({ exercises: response.data })
       })
