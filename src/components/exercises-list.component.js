@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import 'bootstrap/dist/css/bootstrap.css';
 
 const Exercise = props => (
   <tr>
@@ -25,7 +24,7 @@ export default class ExercisesList extends Component {
   }
 
   componentDidMount() {
-    axios.get('/exercises/')
+    axios.get('http://localhost:5000/exercises/')
       .then(response => {
         this.setState({ exercises: response.data })
       })
@@ -35,7 +34,7 @@ export default class ExercisesList extends Component {
   }
 
   deleteExercise(id) {
-    axios.delete('/exercises/'+id)
+    axios.delete('http://localhost:5000/exercises/'+id)
       .then(response => { console.log(response.data)});
 
     this.setState({
@@ -51,7 +50,7 @@ export default class ExercisesList extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div>
         <h3>Logged Exercises</h3>
         <table className="table">
           <thead className="thead-light">
