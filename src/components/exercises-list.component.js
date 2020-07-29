@@ -4,7 +4,6 @@ import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.css';
 
 const Exercise = props => (
-  console.log(props.exercise.username)
   <tr>
     <td>{props.exercise.username}</td>
     <td>{props.exercise.description}</td>
