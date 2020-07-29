@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const Exercise = props => (
   <tr>
@@ -50,7 +51,7 @@ export default class ExercisesList extends Component {
 
   render() {
     return (
-      <div>
+      <container>
         <h3>Logged Exercises</h3>
         <table className="table">
           <thead className="thead-light">
@@ -66,7 +67,7 @@ export default class ExercisesList extends Component {
             { this.exerciseList() }
           </tbody>
         </table>
-      </div>
+      </container>
     )
   }
 }
